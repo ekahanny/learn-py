@@ -1,143 +1,143 @@
-# ## STRING ##
+## STRING ##
 
-# data = "ini adalah string"
-# print(data)
-# print(type(data))
+data = "ini adalah string"
+print(data)
+print(type(data))
 
-# # 1. Cara membuat string
+# 1. Cara membuat string
 
-# '''
-#     1. dengan menggunakan single quote '...'
-#     2. dengan menggunakan double quote "..."
-# '''
+'''
+    1. dengan menggunakan single quote '...'
+    2. dengan menggunakan double quote "..."
+'''
 
-# data = 'Menggunakan single quote'
-# print(data)
+data = 'Menggunakan single quote'
+print(data)
 
-# data = "Menggunakan double quote"
-# print(data)
+data = "Menggunakan double quote"
+print(data)
 
-# print('"Halo, apa kabar?"')
-# print("'Halo, apa kabar?'")
-# print("ini adalah hari jum'at")
+print('"Halo, apa kabar?"')
+print("'Halo, apa kabar?'")
+print("ini adalah hari jum'at")
 
-# # 2. Menggunakan tanda \ (backlash)
+# 2. Menggunakan tanda \ (backlash)
 
-# """
-# backlash merupakan special character 
-# yang dapat memberitahu interpreter
-# untuk mengubah tanda ' menjadi string
-# """
+"""
+backlash merupakan special character 
+yang dapat memberitahu interpreter
+untuk mengubah tanda ' menjadi string
+"""
 
-# print('mari shalat jum\'at')
-# print('g\'day, isn\'t it?')
+print('mari shalat jum\'at')
+print('g\'day, isn\'t it?')
 
-# # backlash
-# print("C:\\user\\Ucup")
+# backlash
+print("C:\\user\\Ucup")
 
-# # tab = menambahkan spasi
-# print("string ini akan memiliki \t\tspasi yang berjauhan")
+# tab = menambahkan spasi
+print("string ini akan memiliki \t\tspasi yang berjauhan")
 
-# # backspace = menghilangkan spasi
-# print("tidak \bada \bspasi")
+# backspace = menghilangkan spasi
+print("tidak \bada \bspasi")
 
-# # newline
-# print("baris pertama.\nbaris kedua.") # LF -> line feed -> unix, macos, linux
-# print("baris pertama.\rbaris kedua.") # CR -> carriage return -> commodore, acorn, lisp 
-# print("baris pertama.\r\nbaris kedua.") # CRLF -> line feed carriage return -> dipakai oleh windows
+# newline
+print("baris pertama.\nbaris kedua.") # LF -> line feed -> unix, macos, linux
+print("baris pertama.\rbaris kedua.") # CR -> carriage return -> commodore, acorn, lisp 
+print("baris pertama.\r\nbaris kedua.") # CRLF -> line feed carriage return -> dipakai oleh windows
 
-# # 3. String literal atau raw
+# 3. String literal atau raw
 
-# # hati-hati
-# print('C:\new folder') # akan salah pathnya
+# hati-hati
+print('C:\new folder') # akan salah pathnya
 
-# # menggunakan raw string
-# print(r'C:\new folder')
+# menggunakan raw string
+print(r'C:\new folder')
 
-# # multiline literal string
-# print("""
-# Nama : Ucup
-# Kelas : 3 SD   
-# """)
+# multiline literal string
+print("""
+Nama : Eka Hanny
+Kelas : XII MIPA 1   
+""")
 
-# # multiline literal string dan RAW
-# print(r"""
-# Nama : Ucup
-# Kelas : 3 SD\new normal 
-# Website : www.ucup.com/newID
-# """)
+# multiline literal string dan RAW
+print(r"""
+Nama : Ucup
+Kelas : XII MIPA\1
+Website : www.test.com/newID
+""")
 
-### OPERASI DAN MANIPULASI STRING ###
+## OPERASI DAN MANIPULASI STRING ###
 
 # 1. Menyambung String (concatenate)
-# nama_pertama = "Eka"
-# nama_tengah = "Hanny"
-# nama_akhir = "Oktavia"
+nama_pertama = "Eka"
+nama_tengah = "Hanny"
+nama_akhir = "Oktavia"
 
-# nama_lengkap = nama_pertama + nama_tengah + nama_akhir
-# print(nama_lengkap)
+nama_lengkap = nama_pertama + nama_tengah + nama_akhir
+print(nama_lengkap)
 
-# nama_lengkap = nama_pertama + " " + nama_tengah + " " + nama_akhir
-# print(nama_lengkap)
+nama_lengkap = nama_pertama + " " + nama_tengah + " " + nama_akhir
+print(nama_lengkap)
 
-# # 2. Menghitung panjang string
-# panjang = len(nama_lengkap)
-# print("panjang " + nama_lengkap + " adalah " + str(panjang))
+# 2. Menghitung panjang string
+panjang = len(nama_lengkap)
+print("panjang " + nama_lengkap + " adalah " + str(panjang))
 
-# # 3. operator untuk string
+# 3. operator untuk string
 
-# # cek apakah ada komponen pada sebuah string
-# a = "a"
-# status = a in nama_lengkap
-# print("apakah " + a + " ada di " + nama_lengkap + ", " + str(status))
+# cek apakah ada komponen pada sebuah string
+a = "a"
+status = a in nama_lengkap
+print("apakah " + a + " ada di " + nama_lengkap + ", " + str(status))
 
-# E = "E"
-# status = E in nama_lengkap
-# print("apakah " + E + " ada di " + nama_lengkap + ", " + str(status))
+E = "E"
+status = E in nama_lengkap
+print("apakah " + E + " ada di " + nama_lengkap + ", " + str(status))
 
-# x = "x"
-# status = x not in nama_lengkap
-# print("apakah " + x + " tidak ada di " + nama_lengkap + ", " + str(status))
+x = "x"
+status = x not in nama_lengkap
+print("apakah " + x + " tidak ada di " + nama_lengkap + ", " + str(status))
 
-# # mengulang string
-# print("wk"*100)
-# print(100*"wk")
+# mengulang string
+print("wk"*100)
+print(100*"wk")
 
-# # indexing
-# print("index ke-0 : " + nama_lengkap[0]) # dimulai dari 0
-# print("index ke-6 : " + nama_lengkap[6]) # index bebas
-# print("index ke-(-1) : " + nama_lengkap[-1]) # indexing dari dibelakang
-# print("index ke-[6,8) : " + nama_lengkap[6:8]) # dimulai dari index 6 sampai sebelum 8
-# print("index ke-[0,2,4,6,8] : " + nama_lengkap[0:10:2]) # diambil index 0,2,4,6,8
+# indexing
+print("index ke-0 : " + nama_lengkap[0]) # dimulai dari 0
+print("index ke-6 : " + nama_lengkap[6]) # index bebas
+print("index ke-(-1) : " + nama_lengkap[-1]) # indexing dari dibelakang
+print("index ke-[6,8) : " + nama_lengkap[6:8]) # dimulai dari index 6 sampai sebelum 8
+print("index ke-[0,2,4,6,8] : " + nama_lengkap[0:10:2]) # diambil index 0,2,4,6,8
 
-# # item paling kecil
-# print("nilai terkecil : " + min(nama_lengkap))
-# # item paling besar
-# print("nilai terbesar : " + max(nama_lengkap))
+# item paling kecil
+print("nilai terkecil : " + min(nama_lengkap))
+# item paling besar
+print("nilai terbesar : " + max(nama_lengkap))
 
-# ascii_code = ord(" ")
-# print("ASCII number dari spasi : " + str(ascii_code))
-# data = 117
-# print("Character dari ascii code 117 : " + chr(data))
+ascii_code = ord(" ")
+print("ASCII number dari spasi : " + str(ascii_code))
+data = 117
+print("Character dari ascii code 117 : " + chr(data))
 
-# # 4. operator dalam bentuk method
+# 4. operator dalam bentuk method
 
-# jumlah = nama_lengkap.count("a")
-# print("jumlah a di " + nama_lengkap + " : " + str(jumlah))
+jumlah = nama_lengkap.count("a")
+print("jumlah a di " + nama_lengkap + " : " + str(jumlah))
 
 ## merubah case pada string
 
 # merubah semua ke upper case
-salam = "bro!"
-print("normal " + salam)
-salam = salam.upper()
-print("upper " + salam)
+sapaan = "hallo"
+print("normal " + sapaan)
+sapaan = sapaan.upper()
+print("upper " + sapaan)
 
 # merubah semua ke lower case
-alay = "aKu KeCe AbieeZZZ"
-print("normal " + alay)
-alay = alay.lower()
-print("lower " + alay)
+sapaan = "hAlLoOOo"
+print("normal " + sapaan)
+sapaan = sapaan.lower()
+print("lower " + sapaan)
 
 ## method is, untuk pengecekan
 
@@ -160,25 +160,41 @@ judul = "It Is Okay To Not Be Okay"
 cek_judul = judul.istitle()
 print(judul + " is title? " + str(cek_judul))
 
-# startwith() dan endwith() <-- keren
+# startwith() dan endwith()
 
-cek_start = "Sangjangnim Oppa".startswith("Sangjangnim")
+cek_start = "Eka Hanny Oktavia".startswith("Eka")
 print("start " + str(cek_start))
-cek_end = "Sangjangnim Oppak".endswith("Oppak")
+cek_end = "Eka Hanny Oktavia".endswith("Oktavia")
 print("end " + str(cek_end))
 
-# join() dan split() <-- buat orang males
+# join() dan split()
 
-pisah = ['aku','sayang','kamu']
-gabungan = ' ehm '.join(pisah)
+"""
+Menggabungkan elemen dalam array 
+dan dipisah sesuai dengan keyword 
+yang ada
+
+""" 
+pisah = ['Ini','ngetes','doang']
+gabungan = ' hehe '.join(pisah)
 print(pisah)
 print(gabungan)
 
+"""
+Memisahkan string menjadi 
+elemen-elemen dalam array
+
+"""
 gabungan = "naik vespa keliling kota"
 pisah = gabungan.split()
 print(gabungan)
 print(pisah)
 
+"""
+Memisahkan string berdasarkan keyword
+dan dimasukkan kedalam sebuah array
+
+"""
 gabungan = "naikehmvespaehmkelilingehmkota"
 pisah = gabungan.split("ehm")
 print(gabungan)
