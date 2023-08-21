@@ -76,6 +76,35 @@ print(f"data akhir = \n{data}")
 
 print(data_akhir)
 
+# ambil posisi data menggunakan index
+data_nama = ["Eka", "Hanny", "Oktavia"]
+
+index_nama_pertama = data_nama.index("Eka")
+print(f"index eka : {index_nama_pertama}")
+index_nama_kedua = data_nama.index("Hanny")
+print(f"index hanny : {index_nama_kedua}")
+
+# count data
+data_angka = [1,5,1,4,3,2,4,3,2,3,7,8,9,0]
+
+jumlah_data_4 = data_angka.count(4)
+print(f"jumlah angka 4 : {jumlah_data_4}")
+jumlah_data_3 = data_angka.count(3)
+print(f"jumlah angka 3 : {jumlah_data_3}")
+
+# mengurutkan list - kecil ke besar
+data_angka.sort()
+print(f"data angka setelah diurutkan : {data_angka}")
+
+# membalik urutan list - besar ke kecil
+data_angka.reverse()
+print(f"data angka setelah dibalik urutannya : {data_angka}")
+
+
+
+
+
+
 
 
 
