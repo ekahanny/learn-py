@@ -28,3 +28,57 @@ print(list_dgn_for_if)
 
 list_dgn_for_if = [i for i in range(0, 10) if i % 2 != 0] # ganjil
 print(list_dgn_for_if)
+
+
+## MANIPULASI LIST ##
+
+# dari depan = 0 1 2
+# dari belakang = -1 -2 -3
+# index = 0(-3)   1(-2)   2(-1)
+data = [ "satu",  "dua",  "tiga"]
+
+# mengambil data dari depan
+data_pertama = data[0]
+print(data_pertama)
+
+# mengambil data dari belakang
+data_terakhir = data[-1]
+print(data_terakhir)
+
+# mengetahui jumlah data
+jumlah_data = len(data) # menggunakan keyword len
+print(jumlah_data)
+
+# menambahkan data sesuai posisi (insert)
+data.insert(0, "nol") # indeks, item
+print(f"data setelah ditambah menggunakan insert : {data}")
+
+# menambahkan data diakhir list (append)
+data.append("empat")
+print(f"data setelah ditambah menggunakan append : {data}")
+
+# menambahkan dua list
+data_baru = ["lima", "enam", "tujuh"]
+data.extend(data_baru)
+print(f"data setelah digabung menggunakan extend : {data}")
+
+# mengubah data
+data[1] = "satuuu"
+print(f"data setelah diubah : {data}")
+
+# meremove data
+data.remove("satuuu") #harus sesuai besar kecilnya agar tdk error
+print(f"data setelah diremove : {data}")
+
+# menghapus data paling belakang
+data_akhir = data.pop()
+print(f"data akhir = \n{data}")
+
+print(data_akhir)
+
+
+
+
+
+
+
