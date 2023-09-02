@@ -66,6 +66,13 @@ print(f"address copy = {hex(id(nested_list_copy[0]))}\n") # address sama
 
 ## DEEPCOPY ##
 
+"""
+
+digunakan untuk menduplikat 
+ELEMEN pada nested list
+
+"""
+
 from copy import deepcopy
 
 nested_list = [data_0,data_1,10]
