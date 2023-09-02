@@ -7,6 +7,10 @@
 
 """
 
+
+
+
+
 #If-Else Inline
 nama = input("Masukkan nama anda: ")
 
@@ -14,12 +18,13 @@ if nama == "Eka": print("You're doing good!")
 print("Akhir dari program")
 
 # If-Else with indentation
+
 umur = int(input("Masukkan umur anda: "))
 
-if umur >= 18:
-    print("You're not a minor")
+if umur <= 18:
+    print("Anda masih dibawah umur")
 else:
-    print("You're a minor")
+    print("Anda telah berusia legal")
 
 
 ## ELIF STATEMENT ##
@@ -65,5 +70,4 @@ elif operator == "/":
     print(f"Hasilnya adalah : {hasil}")
 else:
     print("Operator yang anda masukkan salah!")
-
 
