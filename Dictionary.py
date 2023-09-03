@@ -2,13 +2,17 @@
 # Associative array -> pasangan key value
 
 data_dict = {
-    'key' : 'value',
+    # 'key' : 'value',
     'sisfo' : 'Sistem Informasi',
     'aktu' : 'Ilmu Aktuaria',
     'math' : 'Matematika'
 }
 
 print(data_dict['sisfo'])
+
+
+##############################################
+
 
 ## OPERATOR DICTIONARY ##
 
@@ -40,3 +44,33 @@ print(data_dict)
 # mendelete data pada dictionary
 del data_dict["chem"]
 print(data_dict)
+
+
+##############################################
+
+
+## LOOPING DICTIONARY ##
+
+# Untuk mengambil key
+keys = data_dict.keys()
+print(keys)
+
+for key in data_dict.keys():
+	print(key)
+
+# Untuk mengambil value
+values = data_dict.values()
+print(values)
+
+for value in data_dict.values():
+	print(value)
+
+# Untuk mengambil key & value
+items = data_dict.items()
+print(items)
+
+for item in data_dict.items():
+	print(item)
+
+for key,value in data_dict.items():
+	print(f"key = {key}, value = {value}")
