@@ -74,3 +74,32 @@ for item in data_dict.items():
 
 for key,value in data_dict.items():
 	print(f"key = {key}, value = {value}")
+
+
+##############################################
+
+## COPY DICTIONARY ##
+
+"""
+
+Untuk menduplikat dict, gunakan
+.copy() agar hasil duplikatnya
+menjadi satu kesatuan yang berbeda
+
+"""
+
+data_dict_copy = data_dict.copy()
+print(f"data dict asli : {data_dict}\n")
+print(f"data dict copy : {data_dict_copy}\n")
+
+## POP & POPITEM DICT ##
+
+# Pop : mengeluarkan sebuah elemen dari dict
+data_sisfo = data_dict.pop("sisfo")
+print(f"data sisfo : {data_sisfo}\n")
+print(f"data dict (setelah di pop) : {data_dict}\n")
+
+# Pop Item : mengeluarkan elemen terakhir dari dict
+data_terakhir = data_dict.popitem()
+print(f"data terakhir : {data_terakhir}\n")
+print(f"data setelah di pop item : {data_dict}\n")
