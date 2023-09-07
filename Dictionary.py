@@ -103,3 +103,57 @@ print(f"data dict (setelah di pop) : {data_dict}\n")
 data_terakhir = data_dict.popitem()
 print(f"data terakhir : {data_terakhir}\n")
 print(f"data setelah di pop item : {data_dict}\n")
+
+## MULTIKEYS & NESTING DICT ##
+
+# Multikeys
+
+import datetime
+
+mahasiswa1 = {
+    'nama' : "Eka",
+    'nim' : "H071211058",
+    'prodi' : "Sistem Informasi",
+    'beasiswa' : True,
+    'ttl' : datetime.datetime(2002,10,9)
+}
+
+mahasiswa2 = {
+    'nama' : "Ekuy",
+    'nim' : "H071211110",
+    'prodi' : "Sistem Informasi",
+    'beasiswa' : False,
+    'ttl' : datetime.datetime(2001,7,5)
+}
+
+mahasiswa3 = {
+    'nama' : "Hanny",
+    'nim' : "H071211111",
+    'prodi' : "Sistem Informasi",
+    'beasiswa' : False,
+    'ttl' : datetime.datetime(2000,11,19)
+}
+
+# Nesting
+
+data_mahasiswa = {
+    'MAH01' : mahasiswa1,
+    'MAH02' : mahasiswa2,
+    'MAH03' : mahasiswa3
+}
+
+# String Format
+# < rata kiri
+# ^ tengah
+# > rata kanan
+print(f"{'KEY':<6} {'NAMA': <10} {'NIM': <12} {'Prodi': <17} {'Beasiswa': <9} {'TTL': <10}")
+
+for mahasiswa in data_mahasiswa:
+    KEY = mahasiswa
+    NAMA = data_mahasiswa[KEY]['nama']
+    NIM = data_mahasiswa[KEY]['nim']
+    PRODI = data_mahasiswa[KEY]['prodi']
+    BEASISWA = data_mahasiswa[KEY]['beasiswa']
+    TTL = data_mahasiswa[KEY]['ttl'].strftime("%x")
+
+    print(f"{KEY : <6} {NAMA: <10} {NIM: <12} {PRODI: <17} {BEASISWA: ^9} {TTL: <10}")
