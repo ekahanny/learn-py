@@ -48,14 +48,14 @@ def fungsi_kuadrat(input_angka):
     output_kuadrat = input_angka**2
     return output_kuadrat
 
-# cara return 1
+# cara 1
 x = fungsi_kuadrat(2)
 print(x)
 
-# cara return 2
+# cara 2
 print(fungsi_kuadrat(3))
 
-# cara return 3 -> menambahkan dgn variabel lain
+# cara 3 -> menambahkan dgn variabel lain
 y = 10 + fungsi_kuadrat(7)
 print(y)
 
@@ -70,10 +70,14 @@ def operasi_aritmatika(operand1, operand2):
 
 a,b,c,d = operasi_aritmatika(7,3)
 
-print(f"Hasil tambah : {a}")
+print(f"Hasil tambah. : {a}")
 print(f"Hasil kurang : {b}")
 print(f"Hasil kali : {c}")
 print(f"Hasil bagi : {d :.2f}")
+
+
+
+##############################################
 
 
 

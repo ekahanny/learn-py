@@ -43,12 +43,26 @@ print("Akhir dari loop dengan string \n")
 
 """
 
+# looping dari 1-5
 print(5*"=" + "While Loop" + 5*"=")
 i = 0
 
 while i < 5:
     i += 1
     print(i)
+
+# menjumlahkan angka
+
+angka = int(input("Masukkan jumlah angka yang ingin ditambah : "))
+
+i = 1
+jumlah = 0
+
+while i <= angka:
+    jumlah = jumlah + i
+    i = i + 1
+
+print(f"jumlahnya adalah = {jumlah}")
 
 ## LATIHAN LOOPING ##
 
@@ -85,8 +99,26 @@ while True:
         break
 
 print(5*"-")
-print("akhir while")
+print("akhir while\n")
 print(5*"-")
+
+##############################
+
+## NESTED LOOP
+print(5*"=" + "Nested Loop 1" + 5*"=")
+
+for i in range(6):
+    for j in range(1,11):
+        print(j, end=" ")
+    print()
+
+print(5*"=" + "Nested Loop 2" + 5*"=")
+for baris in range(5):
+  for kolom in range(7):
+    print('o', end=" ")
+  else:
+    print('')
+
 
 
 

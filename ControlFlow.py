@@ -23,7 +23,7 @@ proses iterasi & langsung menuju
 pada step selanjutnya.
 
 """
-
+print("--- CONTINUE 1 ---")
 angka = 0
 
 while angka < 5:
@@ -36,7 +36,19 @@ while angka < 5:
 
     print("looping berlanjut") # aksi 2
 
-print("Looping berhenti")
+print("Looping berhenti\n")
+
+
+print("--- CONTINUE 2 ---")
+i = 0
+
+while i < 10:
+
+    i = i + 1
+    if (i % 2) == 0:
+        continue
+    print(i)
+print()
 
 """
 pada implementasi kode diatas, statement 
@@ -52,6 +64,7 @@ Statement break akan langsung
 menghentikan proses iterasi.
 
 """
+print("--- BREAK 1 ---")
 
 data_int = int(input("hitung sampai :\t"))
 angka = 0
@@ -66,7 +79,17 @@ while True:
     
     print("looping berlanjut")
 
-print("looping berhenti")
+print("looping berhenti\n")
+
+
+print("--- BREAK 2 ---")
+i = 1
+
+while i <= 5:
+    print(i)
+    if i == 3:
+        break
+    i = i + 1
 
 
 
