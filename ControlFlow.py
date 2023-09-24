@@ -25,7 +25,6 @@ pada step selanjutnya.
 """
 print("--- CONTINUE 1 ---")
 angka = 0
-
 while angka < 5:
     angka += 1
     print(f"angka sekarang bernilai : {angka}") #aksi 1
