@@ -202,7 +202,7 @@ function(nama="Kamu", tinggi="150", berat="20")
 
 # Studi Kasus
 
-def math(*args, **kwargs):
+def operasi_aritmatika(*args, **kwargs):
     output = 0
     if kwargs["option"] == "tambah":
         for angka in args:
@@ -216,10 +216,10 @@ def math(*args, **kwargs):
 
     return output
 
-hasil = math(1,2,3,4, option="tambah")
+hasil = operasi_aritmatika(1,2,3,4, option="tambah")
 print(f"hasil jumlah = {hasil}")
 
-hasil = math(1,2,3,4, option="kali")
+hasil = operasi_aritmatika(1,2,3,4, option="kali")
 print(f"hasil kali = {hasil}")
 
 ##############################################

@@ -29,21 +29,30 @@ def factorial(n):
 x = factorial(5)
 print(f"Hasil Faktorial : {x}" )
 
-# Contoh 2
-def show_intervals(mulai, akhir):
-    print(mulai, end=" ")
-    mulai += 1
-    if mulai <= akhir: # stopping condition
-        show_intervals(mulai, akhir) # rekurens
+"""
+factorial(5) = 5 * factorial(4)
+factorial(4) = 5 * 4 * factorial(3)
+factorial(3) = 5 * 4 * 3 * factorial(2)
 
-show_intervals(1,10)
+"""
 
-# Contoh Tanpa Stopping Condition
-def show_multiple(value):
-    print(value, end=" ")
-    value += value
-    show_multiple(value)
 
-show_multiple(2)
+
+# # Contoh 2
+# def show_intervals(mulai, akhir):
+#     print(mulai, end=" ")
+#     mulai += 1
+#     if mulai <= akhir: # stopping condition
+#         show_intervals(mulai, akhir) # rekurens
+
+# show_intervals(1,10)
+
+# # Contoh Tanpa Stopping Condition
+# def show_multiple(value):
+#     print(value, end=" ")
+#     value += value
+#     show_multiple(value)
+
+# show_multiple(2)
 
     
